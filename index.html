@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            column-gap: 80px;
+            padding: 10px;
+            width: 40%;
+            margin: auto;
+        }
+        
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+            border: 2px solid greenyellow;
+            height: 80px;
+            background-color: rgb(134, 47, 255);
+            animation: move1 1.5s infinite alternate;
+            /* animation-direction: alternate; */
+        }
+        
+        @keyframes move1 {
+            from {
+                transform: skewX(-20deg);
+            }
+            to {
+                transform: skewX(20deg);
+            }
+        }
+        
+        .grid-container2 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            column-gap: 80px;
+            padding: 10px;
+            width: 40%;
+            margin: auto;
+            margin-top: 60px;
+        }
+        
+        .grid-container2>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+            border: 2px solid greenyellow;
+            height: 80px;
+            background-color: rgb(255, 165, 47);
+            animation: move2 1.5s infinite alternate;
+            /* animation-direction: alternate; */
+        }
+        
+        @keyframes move2 {
+            from {
+                transform: skewY(-20deg);
+            }
+            to {
+                transform: skewY(20deg);
+            }
+        }
+        
+        .grid-container3 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            column-gap: 80px;
+            padding: 10px;
+            width: 40%;
+            margin: auto;
+            margin-top: 60px;
+        }
+        
+        .grid-container3>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+            border: 2px solid greenyellow;
+            height: 80px;
+            background-color: rgb(255, 47, 175);
+            animation: move3 2s infinite;
+            /* animation-direction: alternate; */
+        }
+        
+        @keyframes move3 {
+            from {
+                transform: rotate(180deg);
+            }
+            to {
+                transform: rotate(-180deg);
+            }
+        }
+        
+        .grid-container4 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            column-gap: 80px;
+            padding: 10px;
+            width: 40%;
+            margin: auto;
+            margin-top: 60px;
+        }
+        
+        .grid-container4>div {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+            border: 2px solid greenyellow;
+            height: 80px;
+            background-color: rgb(47, 255, 106);
+        }
+        
+        .grid-item1 {
+            animation: move41 4s alternate infinite;
+        }
+        
+        .grid-item2 {
+            animation: move42 4s alternate infinite;
+        }
+        
+        .grid-item3 {
+            animation: move43 4s alternate infinite;
+        }
+        
+        @keyframes move41 {
+            from {
+                transform: scaleY(1.5);
+            }
+            to {
+                transform: scaleY(0.5);
+            }
+        }
+        
+        @keyframes move42 {
+            from {
+                transform: scaleX(1.5);
+            }
+            to {
+                transform: scaleX(0.5);
+            }
+        }
+        
+        @keyframes move43 {
+            from {
+                transform: rotate(90deg);
+            }
+            to {
+                transform: rotate(-90deg);
+            }
+        }
+        
+        body {
+            background-color: rgb(47, 141, 255);
+            height: 800px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">Exploring Advanced CSS and CSS Animations</h1>
+    <div class="pone">
+        <div class="grid-container">
+            <div class="grid-item">
+                <!-- Box 1 -->
+            </div>
+            <div class="grid-item">
+                <!-- Box 2 -->
+            </div>
+            <div class="grid-item">
+                <!-- Box 3 -->
+            </div>
+        </div>
+    </div>
+    <div class="ptwo">
+        <div class="grid-container2">
+            <div class="grid-item">
+                <!-- Box 1 -->
+            </div>
+            <div class="grid-item">
+                <!-- Box 2 -->
+            </div>
+            <div class="grid-item">
+                <!-- Box 3 -->
+            </div>
+        </div>
+    </div>
+    <div class="pthree">
+        <div class="grid-container3">
+            <div class="grid-item">
+                <!-- Box 1 -->
+            </div>
+            <div class="grid-item">
+                <!-- Box 2 -->
+            </div>
+            <div class="grid-item">
+                <!-- Box 3 -->
+            </div>
+        </div>
+    </div>
+    <div class="pfour">
+        <div class="grid-container4">
+            <div class="grid-item1">
+                <!-- Box 1 -->
+            </div>
+            <div class="grid-item2">
+                <!-- Box 2 -->
+            </div>
+            <div class="grid-item3">
+                <!-- Box 3 -->
+            </div>
+        </div>
+    </div>
+
+    <h1 style="text-align: center;"><a href="./index2.html" style="color: black;">Let Move To More Animations</a></h1>
+
+</body>
+
+</html>

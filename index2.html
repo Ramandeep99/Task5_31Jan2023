@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+
+    <style>
+        .parent {
+            width: 20%;
+            margin: auto;
+            text-align: center;
+        }
+        
+        .child {
+            /* border: 2px solid lightgreen; */
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            margin-left: 80px;
+            color: aliceblue;
+        }
+        
+        .child1 {
+            transition: width 2s;
+        }
+        
+        .child2 {
+            transition: width 2s, height 3s;
+        }
+        
+        .child1:hover {
+            width: 200px;
+        }
+        
+        .child2:hover {
+            width: 200px;
+            height: 200px;
+        }
+        
+        body {
+            background-color: rgb(154, 222, 222);
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 style="text-align: center;">Try to Replicate this</h1>
+    <div class="parent">
+        <div class="child1 child">
+            Box 1
+        </div>
+        <div class="child2 child">
+            Box 2
+        </div>
+        <div class="child1 child">
+            Box 3
+        </div>
+        <div class="child1 child">
+            Box 4
+        </div>
+        <div class="child1 child">
+            Box 5
+        </div>
+
+        <h1><a href="./index.html">Back</a></h1>
+        <h1><a href="./index3.html">Next</a></h1>
+    </div>
+
+
+</body>
+
+</html>
